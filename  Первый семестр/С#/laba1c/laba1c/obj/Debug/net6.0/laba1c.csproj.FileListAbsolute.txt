@@ -1,0 +1,15 @@
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/bin/Debug/net6.0/laba1c
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/bin/Debug/net6.0/laba1c.deps.json
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/bin/Debug/net6.0/laba1c.runtimeconfig.json
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/bin/Debug/net6.0/laba1c.dll
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/bin/Debug/net6.0/laba1c.pdb
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/obj/Debug/net6.0/laba1c.csproj.AssemblyReference.cache
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/obj/Debug/net6.0/laba1c.GeneratedMSBuildEditorConfig.editorconfig
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/obj/Debug/net6.0/laba1c.AssemblyInfoInputs.cache
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/obj/Debug/net6.0/laba1c.AssemblyInfo.cs
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/obj/Debug/net6.0/laba1c.csproj.CoreCompileInputs.cache
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/obj/Debug/net6.0/laba1c.dll
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/obj/Debug/net6.0/refint/laba1c.dll
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/obj/Debug/net6.0/laba1c.pdb
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/obj/Debug/net6.0/laba1c.genruntimeconfig.cache
+/Users/androsovilya/Desktop/С#/laba1c/laba1c/obj/Debug/net6.0/ref/laba1c.dll

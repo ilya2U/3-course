@@ -1,0 +1,15 @@
+C:\Users\DNS\RiderProjects\Laba5\Laba5\bin\Debug\net6.0\Laba5.exe
+C:\Users\DNS\RiderProjects\Laba5\Laba5\bin\Debug\net6.0\Laba5.deps.json
+C:\Users\DNS\RiderProjects\Laba5\Laba5\bin\Debug\net6.0\Laba5.runtimeconfig.json
+C:\Users\DNS\RiderProjects\Laba5\Laba5\bin\Debug\net6.0\Laba5.dll
+C:\Users\DNS\RiderProjects\Laba5\Laba5\bin\Debug\net6.0\Laba5.pdb
+C:\Users\DNS\RiderProjects\Laba5\Laba5\obj\Debug\net6.0\Laba5.csproj.AssemblyReference.cache
+C:\Users\DNS\RiderProjects\Laba5\Laba5\obj\Debug\net6.0\Laba5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DNS\RiderProjects\Laba5\Laba5\obj\Debug\net6.0\Laba5.AssemblyInfoInputs.cache
+C:\Users\DNS\RiderProjects\Laba5\Laba5\obj\Debug\net6.0\Laba5.AssemblyInfo.cs
+C:\Users\DNS\RiderProjects\Laba5\Laba5\obj\Debug\net6.0\Laba5.csproj.CoreCompileInputs.cache
+C:\Users\DNS\RiderProjects\Laba5\Laba5\obj\Debug\net6.0\Laba5.dll
+C:\Users\DNS\RiderProjects\Laba5\Laba5\obj\Debug\net6.0\refint\Laba5.dll
+C:\Users\DNS\RiderProjects\Laba5\Laba5\obj\Debug\net6.0\Laba5.pdb
+C:\Users\DNS\RiderProjects\Laba5\Laba5\obj\Debug\net6.0\Laba5.genruntimeconfig.cache
+C:\Users\DNS\RiderProjects\Laba5\Laba5\obj\Debug\net6.0\ref\Laba5.dll

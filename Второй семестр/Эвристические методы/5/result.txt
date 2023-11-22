@@ -1,0 +1,192 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+import random
+from matplotlib.pyplot import figure
+
+
+def print_to_file(s=''):
+    print(s)
+
+
+def probability(probability, event):
+    if random.random() < probability:
+        print_to_file("Произошло событие: " + event)
+        return True
+    else:
+        return False
+
+
+def calculate_total_distance(path, matrix):
+    total_distance = 0
+    for i in range(len(path) - 1):
+        total_distance += matrix[path[i]][path[i + 1]]
+    return total_distance
+
+
+def perform_crossover(parent1, parent2):
+    point = random.randint(1, len(parent1) - 2)
+    child1 = parent1[:point] + [node for node in parent2 if node not in parent1[point:]]
+    child2 = parent2[:point] + [node for node in parent1 if node not in parent2[point:]]
+    return child1, child2
+
+
+def perform_mutation(path):
+    point1 = random.randint(1, len(path) - 2)
+    point2 = random.randint(1, len(path) - 2)
+    path[point1], path[point2] = path[point2], path[point1]
+    return path
+
+
+def genetic_algorithm(graph, population_size, crossover_probability, mutation_probability):
+    population = []
+    num_nodes = len(graph)
+
+    for _ in range(population_size):
+        path = list(range(num_nodes))
+        random.shuffle(path)
+        population.append(path)
+
+    best_distances = []
+    generation_count = 1
+
+    while True:
+        print_to_file(f"Поколение: {generation_count}")
+        generation_count += 1
+
+        distances = [calculate_total_distance(path, graph) for path in population]
+        best_distance = min(distances)
+        best_distances.append(best_distance)
+        print_to_file(f"Минимальный путь = {best_distance}")
+
+        if len(set(best_distances[-5:])) == 1:
+            break
+
+        new_population = []
+
+        for i in range(population_size):
+            if probability(crossover_probability, "кросовер"):
+                parent1 = population[i]
+                parent2 = random.choice(population)
+                child1, child2 = perform_crossover(parent1, parent2)
+                new_population.extend([child1, child2])
+            else:
+                new_population.append(population[i])
+
+        for i in range(population_size):
+            if probability(mutation_probability, "мутация"):
+                new_population[i] = perform_mutation(new_population[i])
+
+        population = new_population
+
+    best_path = population[distances.index(best_distance)]
+    return best_path, best_distance
+
+
+def tsp_greedy(graph, start_node):
+    num_nodes = len(graph)
+    path = [start_node]
+    visited = [False] * num_nodes
+    visited[start_node] = True
+
+    while len(path) < num_nodes:
+        current_node = path[-1]
+        min_distance = float('inf')
+        next_node = None
+
+        for neighbor in range(num_nodes):
+            if not visited[neighbor] and graph[current_node][neighbor] < min_distance:
+                min_distance = graph[current_node][neighbor]
+                next_node = neighbor
+
+        path.append(next_node)
+        visited[next_node] = True
+
+    path.append(start_node)
+    total_distance = calculate_total_distance(path, graph)
+    return path, total_distance
+
+
+def draw_tsp_graph(graph, path, color, title):
+    figure(figsize=(10, 10))
+    plt.title(title)
+    num_nodes = len(graph)
+    G = nx.Graph()
+
+    options_node = {
+        'node_color': 'white',
+        'node_size': 1500,
+        'linewidths': 3,
+        'width': 3,
+        'edge_color': 'black',
+        'font_size': 30,
+        'font_color': 'black',
+        'verticalalignment': 'center_baseline',
+    }
+
+    for i in range(num_nodes):
+        G.add_node(i)
+
+    for i in range(num_nodes):
+        for j in range(i + 1, num_nodes):
+            weight = graph[i][j]
+            if weight != 0:
+                G.add_edge(i, j, weight=weight)
+
+    pos = nx.circular_layout(G)
+
+    nx.draw(G, pos, with_labels=True, **options_node)
+
+    path_edges = [(path[i], path[i + 1]) for i in range(len(path) - 1)]
+    path_edges.append((path[-1], path[0]))
+    nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color=color, width=5.0)
+
+    edge_labels = {(u, v): str(graph[u][v]) for u, v in G.edges}
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, label_pos=0.3, font_size=15, font_color=color,
+                                 font_family="sans-serif", font_weight="normal", horizontalalignment="center")
+    ax = plt.gca()
+    ax.collections[0].set_edgecolor('#000000')
+    plt.show()
+
+
+def initialize_diagonal(matrix):
+    for i in range(len(matrix)):
+        matrix[i][i] = 0
+    return matrix
+
+
+start_node = 3  # стартовая вершина от 0 до N-1
+num_nodes = 11  # количество вершин
+min_distance = 10  # диапазон от
+max_distance = 30  # диапазон до
+
+population_size = 11  # количество особей в популяции
+max_generations = 11  # количество поколений
+crossover_probability = 0.8  # вероятность кроссовера
+mutation_probability = 0.1  # вероятность мутации
+
+graph = [[random.randint(min_distance, max_distance) for _ in range(num_nodes)] for _ in range(num_nodes)]
+graph = initialize_diagonal(graph)
+
+for i in range(num_nodes):
+    for j in range(i + 1, num_nodes):
+        graph[j][i] = graph[i][j]
+
+print_to_file("Матрица:")
+for row in graph:
+    print_to_file(row)
+
+best_path_genetic, best_distance_genetic = genetic_algorithm(graph, population_size, crossover_probability,
+                                                             mutation_probability)
+
+print_to_file('\nГенетический алгоритм:')
+print_to_file(f"Минимальный путь: {best_path_genetic}")
+print_to_file(f"Минимальная сумма: {best_distance_genetic}")
+
+best_path_greedy, best_distance_greedy = tsp_greedy(graph, start_node)
+
+print_to_file('\nЖадный алгоритм:')
+print_to_file(f"Минимальный путь: {best_path_greedy}")
+print_to_file(f"Минимальная сумма: {best_distance_greedy}")
+
+draw_tsp_graph(graph, best_path_greedy, 'green', 'Жадный')  # жадный
+draw_tsp_graph(graph, best_path_genetic, 'purple', 'Генетический')  # генетический

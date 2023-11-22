@@ -1,0 +1,15 @@
+/Users/androsovilya/Desktop/C Sharp/3/bin/Debug/net6.0/3
+/Users/androsovilya/Desktop/C Sharp/3/bin/Debug/net6.0/3.deps.json
+/Users/androsovilya/Desktop/C Sharp/3/bin/Debug/net6.0/3.runtimeconfig.json
+/Users/androsovilya/Desktop/C Sharp/3/bin/Debug/net6.0/3.dll
+/Users/androsovilya/Desktop/C Sharp/3/bin/Debug/net6.0/3.pdb
+/Users/androsovilya/Desktop/C Sharp/3/obj/Debug/net6.0/3.csproj.AssemblyReference.cache
+/Users/androsovilya/Desktop/C Sharp/3/obj/Debug/net6.0/3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/androsovilya/Desktop/C Sharp/3/obj/Debug/net6.0/3.AssemblyInfoInputs.cache
+/Users/androsovilya/Desktop/C Sharp/3/obj/Debug/net6.0/3.AssemblyInfo.cs
+/Users/androsovilya/Desktop/C Sharp/3/obj/Debug/net6.0/3.csproj.CoreCompileInputs.cache
+/Users/androsovilya/Desktop/C Sharp/3/obj/Debug/net6.0/3.dll
+/Users/androsovilya/Desktop/C Sharp/3/obj/Debug/net6.0/refint/3.dll
+/Users/androsovilya/Desktop/C Sharp/3/obj/Debug/net6.0/3.pdb
+/Users/androsovilya/Desktop/C Sharp/3/obj/Debug/net6.0/3.genruntimeconfig.cache
+/Users/androsovilya/Desktop/C Sharp/3/obj/Debug/net6.0/ref/3.dll

@@ -1,0 +1,15 @@
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/bin/Debug/net6.0/lab5c
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/bin/Debug/net6.0/lab5c.deps.json
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/bin/Debug/net6.0/lab5c.runtimeconfig.json
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/bin/Debug/net6.0/lab5c.dll
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/bin/Debug/net6.0/lab5c.pdb
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/obj/Debug/net6.0/lab5c.csproj.AssemblyReference.cache
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/obj/Debug/net6.0/lab5c.GeneratedMSBuildEditorConfig.editorconfig
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/obj/Debug/net6.0/lab5c.AssemblyInfoInputs.cache
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/obj/Debug/net6.0/lab5c.AssemblyInfo.cs
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/obj/Debug/net6.0/lab5c.csproj.CoreCompileInputs.cache
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/obj/Debug/net6.0/lab5c.dll
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/obj/Debug/net6.0/refint/lab5c.dll
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/obj/Debug/net6.0/lab5c.pdb
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/obj/Debug/net6.0/lab5c.genruntimeconfig.cache
+/Users/androsovilya/Desktop/С#/lab5c/lab5c/obj/Debug/net6.0/ref/lab5c.dll
